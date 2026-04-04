@@ -24,3 +24,71 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Mobile menu: hidden by default, shown when open */
+@media (max-width: 991.98px) {
+  .main_menu_inner.navbar-collapse.mobile-hidden {
+    display: none !important;
+  }
+}
+
+/* Desktop: always visible flex */
+@media (min-width: 992px) {
+  .main_menu_inner.navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+}
+
+/* Equal height service cards */
+.service_item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+}
+
+.service_item .item_contact {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service_item .item_contact p {
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Ensure service section rows have equal height cards */
+.service_section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service_section .row > [class*="col-"] {
+  display: flex;
+}
+
+/* Add spacing between contact info icon and text */
+.contact_info_list .info_icon {
+  margin-right: 0.5rem;
+}
+
+/* Center author image */
+.service_author .author_image {
+  width: auto !important;
+  margin: 0 auto;
+}
+
+.service_author .author_image img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50% !important;
+  border: 2px solid #ddd;
+  object-fit: contain !important;
+  width: 100px;
+  height: 100px;
+}
