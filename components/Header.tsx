@@ -17,17 +17,13 @@ export default function Header() {
           <div className="col-lg-3 col-5">
             <div className="site_logo">
               <Link className="site_link" href="/" onClick={closeMenu}>
-                <span style={{
-                  fontFamily: "'Georgia', serif",
-                  fontSize: '1.4rem',
-                  fontWeight: 700,
-                  letterSpacing: '0.03em',
-                  color: '#2d6a4f',
-                  lineHeight: 1.2,
-                  display: 'inline-block'
-                }}>
-                  Berre Yılmaz
-                </span>
+                <Image
+                  src="/images/site_logo/logo.jpeg"
+                  alt="Berre Yılmaz"
+                  width={150}
+                  height={50}
+                  style={{ objectFit: 'contain' }}
+                />
               </Link>
             </div>
           </div>
@@ -53,6 +49,9 @@ export default function Header() {
                       <li><Link href="/service" onClick={closeMenu}>Tüm Hizmetler</Link></li>
                       <li><Link href="/service/cift-terapisi" onClick={closeMenu}>Çift Terapisi</Link></li>
                       <li><Link href="/service/yetiskin-terapisi" onClick={closeMenu}>Yetişkin Terapisi</Link></li>
+                      <li><Link href="/service/cocuk-terapisi" onClick={closeMenu}>Çocuk Terapisi</Link></li>
+                      <li><Link href="/service/oyun-terapisi" onClick={closeMenu}>Oyun Terapisi</Link></li>
+                      <li><Link href="/service/online-terapi" onClick={closeMenu}>Online Terapi</Link></li>
                     </ul>
                   </li>
                   <li className={pathname === '/contact' ? 'active' : ''}>

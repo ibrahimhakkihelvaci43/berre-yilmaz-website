@@ -1,6 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Hakkımda - Klinik Psikolog Berre Yılmaz",
+  description: "Klinik Psikolog Berre Yılmaz hakkında bilgi. BDT eğitimi, bireysel ve çift terapisi alanında uzman. Okan Üniversitesi Klinik Psikoloji yüksek lisans öğrencisi.",
+  keywords: "berre yılmaz, klinik psikolog, BDT, bilişsel davranışçı terapi, psikoloji eğitimi, gebze psikolog",
+  openGraph: {
+    title: "Hakkımda - Klinik Psikolog Berre Yılmaz",
+    description: "BDT eğitimi almış, bireysel ve çift terapisi alanında uzman klinik psikolog.",
+    type: "profile",
+    locale: "tr_TR",
+  }
+};
 
 export default function About() {
   return (
@@ -35,7 +48,7 @@ export default function About() {
                 <Image src="/images/hero/berre-yilmaz.jpg" alt="Klinik Psikolog Berre Yılmaz" width={600} height={700} />
                 <div className="image_shape bg_primary_light"></div>
                 <div className="about_video_icon">
-                  <a className="video_play_btn popup_video" href="https://www.youtube.com">
+                  <a className="video_play_btn" href="https://instagram.com/psikologberreylmaz" target="_blank" rel="noopener noreferrer">
                     <i className="fa-duotone fa-play"></i>
                   </a>
                 </div>
@@ -61,7 +74,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="row">
-                  <div className="col-md-5 col-sm-6">
+                  <div className="col-md-6 col-sm-6">
                     <ul className="info_list unordered_list_block">
                       <li>
                         <span className="info_icon"><i className="fa-light fa-circle-check"></i></span>
@@ -77,7 +90,7 @@ export default function About() {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-md-5 col-sm-6">
+                  <div className="col-md-6 col-sm-6 mobile-no-padding-top">
                     <ul className="info_list unordered_list_block">
                       <li>
                         <span className="info_icon"><i className="fa-light fa-circle-check"></i></span>

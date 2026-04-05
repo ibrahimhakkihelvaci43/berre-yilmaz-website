@@ -68,7 +68,7 @@ body {
   flex-wrap: wrap;
 }
 
-.service_section .row > [class*="col-"] {
+.service_section .row>[class*="col-"] {
   display: flex;
 }
 
@@ -91,4 +91,112 @@ body {
   object-fit: contain !important;
   width: 100px;
   height: 100px;
+}
+
+/* Disable custom cursor on mobile and touch devices */
+@media (max-width: 991.98px),
+(hover: none),
+(pointer: coarse) {
+
+  .cb-cursor,
+  .cb-cursor-text {
+    display: none !important;
+  }
+}
+
+/* Remove padding-top on second column on mobile only */
+@media (max-width: 767.98px) {
+  .mobile-no-padding-top {
+    padding-top: 0 !important;
+  }
+}
+
+/* Testimonial slider custom styling */
+.testimonial_section .slick-dots {
+  bottom: -40px;
+}
+
+.testimonial_section .slick-dots li {
+  margin: 0 5px;
+}
+
+.testimonial_section .slick-dots li button {
+  padding: 0;
+}
+
+.testimonial_section .slick-dots li button:before {
+  font-size: 12px;
+  color: #d1d5db !important;
+  opacity: 1 !important;
+}
+
+.testimonial_section .slick-dots li.slick-active button:before {
+  color: var(--bs-primary) !important;
+  opacity: 1 !important;
+}
+
+.testimonial_section .slick-dots li button:hover:before {
+  color: var(--bs-primary) !important;
+  opacity: 0.75 !important;
+}
+
+/* Hide default slick arrows (we use custom ones) */
+.testimonial_section .slick-prev:before,
+.testimonial_section .slick-next:before {
+  content: '' !important;
+  display: none !important;
+}
+
+/* Ensure slick displays properly */
+.testimonial_section .slick-list {
+  overflow: hidden !important;
+  padding: 10px 0 !important;
+}
+
+/* Override any orange/default colors in slick slider */
+.testimonial_section .slick-slider * {
+  outline: none !important;
+}
+
+.testimonial_section .slick-slide {
+  outline: none !important;
+}
+
+/* Ensure testimonial items have proper spacing */
+.testimonial_section .testimonial_item {
+  margin: 5px 0;
+  padding: 50px !important;
+}
+
+.testimonial_section .testimonial_item .author_box {
+  margin-bottom: 25px !important;
+}
+
+.testimonial_section .testimonial_item p {
+  margin-top: 0 !important;
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 991.98px) {
+  .testimonial_section .slick-arrow {
+    display: none !important;
+  }
+  
+  .testimonial_section .slick-prev,
+  .testimonial_section .slick-next {
+    display: none !important;
+  }
+  
+  .testimonial_section .testimonial_item {
+    padding: 30px 20px !important;
+  }
+  
+  .testimonial_section .slick-dots {
+    padding-top: 8px !important;
+  }
+  
+  /* Reduce slider container padding on mobile */
+  .testimonial_section > .container > div[style*="padding"] {
+    padding: 40px 25px !important;
+  }
 }

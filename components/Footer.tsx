@@ -10,17 +10,20 @@ export default function Footer() {
             <div className="col-lg-3">
               <div className="site_logo">
                 <Link className="site_link" href="/">
-                  <span style={{
-                    fontFamily: "'Georgia', serif",
-                    fontSize: '1.4rem',
-                    fontWeight: 700,
-                    letterSpacing: '0.03em',
-                    color: '#fff',
-                    lineHeight: 1.2,
+                  <div style={{
+                    backgroundColor: 'white',
+                    padding: '8px 16px',
+                    borderRadius: '8px',
                     display: 'inline-block'
                   }}>
-                    Berre Yılmaz
-                  </span>
+                    <Image
+                      src="/images/site_logo/logo.jpeg"
+                      alt="Berre Yılmaz"
+                      width={150}
+                      height={50}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
                 </Link>
               </div>
             </div>

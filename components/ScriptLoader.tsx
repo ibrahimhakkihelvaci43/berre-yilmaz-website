@@ -14,12 +14,12 @@ export default function ScriptLoader() {
     if (typeof window !== 'undefined') {
       const loadScripts = async () => {
         await new Promise(resolve => setTimeout(resolve, 100));
-        
+
         if (window.jQuery && window.jQuery.fn.slick) {
           window.jQuery('.slick-carousel').slick();
         }
       };
-      
+
       loadScripts();
     }
   }, []);
@@ -30,7 +30,6 @@ export default function ScriptLoader() {
       <Script src="/js/popper.min.js" strategy="beforeInteractive" />
       <Script src="/js/bootstrap.min.js" strategy="afterInteractive" />
       <Script src="/js/bootstrap-dropdown-ml-hack.min.js" strategy="afterInteractive" />
-      <Script src="/js/cursor.min.js" strategy="afterInteractive" />
       <Script src="/js/slick.min.js" strategy="afterInteractive" />
       <Script src="/js/magnific-popup.min.js" strategy="afterInteractive" />
       <Script src="/js/appear.min.js" strategy="afterInteractive" />

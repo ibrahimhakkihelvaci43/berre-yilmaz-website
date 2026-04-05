@@ -1,6 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Hizmetler - Klinik Psikolog Berre Yılmaz",
+  description: "Çift terapisi, yetişkin terapisi, çocuk terapisi, oyun terapisi ve online terapi hizmetleri. Gebze/Kocaeli'de profesyonel psikolojik destek.",
+  keywords: "çift terapisi, bireysel terapi, yetişkin terapisi, çocuk terapisi, oyun terapisi, online terapi, psikolojik danışmanlık hizmetleri",
+  openGraph: {
+    title: "Hizmetler - Klinik Psikolog Berre Yılmaz",
+    description: "Çift terapisi, yetişkin terapisi, çocuk terapisi, oyun terapisi ve online terapi hizmetleri.",
+    type: "website",
+    locale: "tr_TR",
+  }
+};
 
 export default function Services() {
   return (

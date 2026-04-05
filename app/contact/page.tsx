@@ -1,5 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "İletişim - Klinik Psikolog Berre Yılmaz",
+  description: "Randevu almak için iletişime geçin. Aslan Yapı, Hacıhalil, Hürriyet Cd. Kat 4 Daire 11, Gebze/Kocaeli. Tel: 0539 387 31 54",
+  keywords: "randevu, psikolog randevu, gebze psikolog iletişim, terapi randevusu, psikolojik danışmanlık randevu",
+  openGraph: {
+    title: "İletişim - Klinik Psikolog Berre Yılmaz",
+    description: "Randevu almak için iletişime geçin. Gebze/Kocaeli. Tel: 0539 387 31 54",
+    type: "website",
+    locale: "tr_TR",
+  }
+};
 
 export default function Contact() {
   return (
@@ -46,7 +59,10 @@ export default function Contact() {
                     <div className="item_icon"><i className="fa-solid fa-location-dot"></i></div>
                     <div className="item_content">
                       <h3 className="item_title">Adres</h3>
-                      <p className="item_info mb-0">Mehmet Ali Paşa Mah. Ömerağa Cad. No:12, İzmit / Kocaeli</p>
+                      <p className="item_info mb-0">
+                        Aslan Yapı, Hacıhalil, Hürriyet Cd.<br />
+                        Kat 4 Daire 11, 41400 Gebze/Kocaeli
+                      </p>
                     </div>
                   </li>
                 </ul>
