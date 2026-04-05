@@ -1,7 +1,8 @@
 'use client';
 
-import { testimonials } from '@/data/testimonials';
+import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import { testimonials } from '@/data/testimonials';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -56,26 +57,30 @@ function PrevArrow(props: any) {
 }
 
 export default function Testimonials() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1200);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: isMobile ? 1 : 2,
+    slidesToScroll: isMobile ? 1 : 2,
     autoplay: true,
     autoplaySpeed: 5000,
+    arrows: !isMobile,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      }
-    ]
+    prevArrow: <PrevArrow />
   };
 
   return (

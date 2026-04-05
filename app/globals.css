@@ -177,7 +177,7 @@ body {
 }
 
 /* Hide arrows on mobile */
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .testimonial_section .slick-arrow {
     display: none !important;
   }
