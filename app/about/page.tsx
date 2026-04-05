@@ -116,7 +116,7 @@ export default function About() {
               <div className="col-lg-4 col-md-4 col-sm-4">
                 <div className="counter_item">
                   <div className="counter_value">
-                    <AnimatedCounter target={20} />
+                    <AnimatedCounter target={3} />
                     <span>+</span>
                   </div>
                   <h3 className="counter_title">Yıllık Deneyim</h3>
@@ -126,7 +126,7 @@ export default function About() {
               <div className="col-lg-4 col-md-4 col-sm-4">
                 <div className="counter_item">
                   <div className="counter_value">
-                    <AnimatedCounter target={840} />
+                    <AnimatedCounter target={50} />
                     <span>+</span>
                   </div>
                   <h3 className="counter_title">Yardım Alan Danışan</h3>
@@ -139,8 +139,8 @@ export default function About() {
                     <AnimatedCounter target={98} />
                     <span>%</span>
                   </div>
-                  <h3 className="counter_title">Pozitif Geri Bildirim</h3>
-                  <p className="counter_description mb-0">Danışan memnuniyeti</p>
+                  <h3 className="counter_title">Müşteri Memnuniyeti</h3>
+                  <p className="counter_description mb-0">Pozitif geri bildirim</p>
                 </div>
               </div>
             </div>
