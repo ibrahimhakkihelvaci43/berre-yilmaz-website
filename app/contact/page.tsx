@@ -3,11 +3,11 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "İletişim - Klinik Psikolog Berre Yılmaz",
+  title: "İletişim - Psikolog Berre Yılmaz",
   description: "Randevu almak için iletişime geçin. Aslan Yapı, Hacıhalil, Hürriyet Cd. Kat 4 Daire 11, Gebze/Kocaeli. Tel: 0539 387 31 54",
   keywords: "randevu, psikolog randevu, gebze psikolog iletişim, terapi randevusu, psikolojik danışmanlık randevu",
   openGraph: {
-    title: "İletişim - Klinik Psikolog Berre Yılmaz",
+    title: "İletişim - Psikolog Berre Yılmaz",
     description: "Randevu almak için iletişime geçin. Gebze/Kocaeli. Tel: 0539 387 31 54",
     type: "website",
     locale: "tr_TR",
@@ -76,7 +76,7 @@ export default function Contact() {
                 <div className="hero_image_wrap">
                   <Image
                     src="/images/hero/berre-yilmaz.jpg"
-                    alt="Klinik Psikolog Berre Yılmaz"
+                    alt="Psikolog Berre Yılmaz"
                     width={600}
                     height={700}
                     style={{ width: '100%', height: 'auto', borderRadius: '12px' }}

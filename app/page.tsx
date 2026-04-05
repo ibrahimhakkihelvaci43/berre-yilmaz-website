@@ -6,11 +6,11 @@ import Testimonials from '@/components/Testimonials';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ana Sayfa - Klinik Psikolog Berre Yılmaz",
+  title: "Ana Sayfa - Psikolog Berre Yılmaz",
   description: "Gebze/Kocaeli'de bireysel terapi, çift terapisi ve online terapi hizmetleri. 3+ yıllık deneyim ile profesyonel psikolojik destek.",
-  keywords: "psikolog gebze, klinik psikolog, çift terapisi, bireysel terapi, online terapi, psikolojik danışmanlık, berre yılmaz",
+  keywords: "psikolog gebze, çift terapisi, bireysel terapi, online terapi, psikolojik danışmanlık, berre yılmaz",
   openGraph: {
-    title: "Klinik Psikolog Berre Yılmaz - Psikolojik Danışmanlık",
+    title: "Psikolog Berre Yılmaz - Psikolojik Danışmanlık",
     description: "Gebze/Kocaeli'de bireysel terapi, çift terapisi ve online terapi hizmetleri.",
     type: "website",
     locale: "tr_TR",
@@ -26,7 +26,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="hero_content_wrap">
                 <h1 className="heading_text">
-                  Klinik Psikolog Berre Yılmaz
+                  Psikolog Berre Yılmaz
                 </h1>
                 <p className="heading_description">
                   Bireysel terapi, çift terapisi ve aile danışmanlığı alanlarında uzman psikolojik destek hizmeti sunuyorum. Güvenli ve destekleyici bir ortamda, yaşam kalitенizi artırmak için birlikte çalışalım.
@@ -97,7 +97,7 @@ export default function Home() {
               <div className="hero_image_wrap">
                 <Image
                   src="/images/hero/berre-yilmaz.jpg"
-                  alt="Klinik Psikolog Berre Yılmaz - Gebze/Kocaeli'de Profesyonel Psikolojik Danışmanlık"
+                  alt="Psikolog Berre Yılmaz - Gebze/Kocaeli'de Profesyonel Psikolojik Danışmanlık"
                   width={600}
                   height={700}
                   priority
@@ -171,7 +171,7 @@ export default function Home() {
               <div className="image_widget">
                 <Image
                   src="/images/hero/berre-yilmaz.jpg"
-                  alt="Klinik Psikolog Berre Yılmaz - BDT Eğitimli Terapi Uzmanı"
+                  alt="Psikolog Berre Yılmaz - BDT Eğitimli Terapi Uzmanı"
                   width={600}
                   height={700}
                 />
@@ -187,7 +187,7 @@ export default function Home() {
               <div className="about_content">
                 <div className="section_heading mb-4">
                   <h2 className="section_heading_text">
-                    <mark>Klinik Psikolog Berre Yılmaz</mark>
+                    <mark>Psikolog Berre Yılmaz</mark>
                   </h2>
                   <p className="section_heading_description mb-0 ">
                     Bireysel terapi, çift terapisi ve aile danışmanlığı alanlarında uzmanlaşmış bir psikolog olarak, danışanlarıma güvenli ve destekleyici bir ortamda profesyonel destek sunuyorum.

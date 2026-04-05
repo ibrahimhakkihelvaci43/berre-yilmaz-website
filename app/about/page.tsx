@@ -4,12 +4,12 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Hakkımda - Klinik Psikolog Berre Yılmaz",
-  description: "Klinik Psikolog Berre Yılmaz hakkında bilgi. BDT eğitimi, bireysel ve çift terapisi alanında uzman. Okan Üniversitesi Klinik Psikoloji yüksek lisans öğrencisi.",
-  keywords: "berre yılmaz, klinik psikolog, BDT, bilişsel davranışçı terapi, psikoloji eğitimi, gebze psikolog",
+  title: "Hakkımda - Psikolog Berre Yılmaz",
+  description: "Psikolog Berre Yılmaz hakkında bilgi. BDT eğitimi, bireysel ve çift terapisi alanında uzman. Okan Üniversitesi Klinik Psikoloji yüksek lisans öğrencisi.",
+  keywords: "berre yılmaz, BDT, bilişsel davranışçı terapi, psikoloji eğitimi, gebze psikolog",
   openGraph: {
-    title: "Hakkımda - Klinik Psikolog Berre Yılmaz",
-    description: "BDT eğitimi almış, bireysel ve çift terapisi alanında uzman klinik psikolog.",
+    title: "Hakkımda - Psikolog Berre Yılmaz",
+    description: "BDT eğitimi almış, bireysel ve çift terapisi alanında uzman psikolog.",
     type: "profile",
     locale: "tr_TR",
   }
@@ -45,7 +45,7 @@ export default function About() {
           <div className="row align-items-center justify-content-lg-between">
             <div className="col-lg-6 order-lg-last">
               <div className="image_widget">
-                <Image src="/images/hero/berre-yilmaz.jpg" alt="Klinik Psikolog Berre Yılmaz" width={600} height={700} />
+                <Image src="/images/hero/berre-yilmaz.jpg" alt="Psikolog Berre Yılmaz" width={600} height={700} />
                 <div className="image_shape bg_primary_light"></div>
                 <div className="about_video_icon">
                   <a className="video_play_btn" href="https://instagram.com/psikologberreylmaz" target="_blank" rel="noopener noreferrer">

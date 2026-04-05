@@ -83,11 +83,11 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
             <div className="col-lg-6">
               <div className="service_author h-100 text-center">
                 <div className="author_image mb-3 d-flex justify-content-center">
-                  <Image src="/images/hero/berre-yilmaz.jpg" alt="Klinik Psikolog Berre Yılmaz" width={100} height={100} />
+                  <Image src="/images/hero/berre-yilmaz.jpg" alt="Psikolog Berre Yılmaz" width={100} height={100} />
                 </div>
                 <div className="author_content">
                   <h4 className="author_name">Berre Yılmaz</h4>
-                  <span className="author_designation">Klinik Psikolog</span>
+                  <span className="author_designation">Psikolog</span>
                   <p>
                     Medipol Üniversitesi Psikoloji mezunu. BDT eğitimli. Okan Üniversitesi Klinik Psikoloji yüksek lisans öğrencisi.
                   </p>

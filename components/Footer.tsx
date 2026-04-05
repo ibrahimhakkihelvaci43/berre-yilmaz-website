@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="copyright_widget text-center">
-          <p className="copyright_text m-0">© 2026 <b>Klinik Psikolog Berre Yılmaz</b> - Tüm hakları saklıdır</p>
+          <p className="copyright_text m-0">© 2026 <b>Psikolog Berre Yılmaz</b> - Tüm hakları saklıdır</p>
         </div>
       </div>
     </footer>

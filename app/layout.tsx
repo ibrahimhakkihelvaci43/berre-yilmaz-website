@@ -9,19 +9,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Klinik Psikolog Berre Yılmaz - Psikolojik Danışmanlık",
-    template: "%s | Klinik Psikolog Berre Yılmaz"
+    default: "Psikolog Berre Yılmaz - Psikolojik Danışmanlık",
+    template: "%s | xwPsikolog Berre Yılmaz"
   },
   description: "Gebze/Kocaeli'de bireysel terapi, çift terapisi ve online terapi hizmetleri. 3+ yıllık deneyim ile profesyonel psikolojik destek.",
-  keywords: "psikolog gebze, klinik psikolog, çift terapisi, bireysel terapi, online terapi, psikolojik danışmanlık, berre yılmaz, kocaeli psikolog",
+  keywords: "psikolog gebze, psikolog, çift terapisi, bireysel terapi, online terapi, psikolojik danışmanlık, berre yılmaz, kocaeli psikolog",
   authors: [{ name: "Berre Yılmaz" }],
   creator: "Berre Yılmaz",
-  publisher: "Klinik Psikolog Berre Yılmaz",
+  publisher: "Psikolog Berre Yılmaz",
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "Klinik Psikolog Berre Yılmaz",
-    title: "Klinik Psikolog Berre Yılmaz - Psikolojik Danışmanlık",
+    siteName: "Psikolog Berre Yılmaz",
+    title: "Psikolog Berre Yılmaz - Psikolojik Danışmanlık",
     description: "Gebze/Kocaeli'de bireysel terapi, çift terapisi ve online terapi hizmetleri.",
   },
   robots: {
